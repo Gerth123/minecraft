@@ -18,7 +18,7 @@ ENV EULA=TRUE
 WORKDIR /server
 
 # Download the Fabric installer and use it to install the Fabric server
-RUN curl -o fabric-installer.jar "https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.3/fabric-installer-1.0.1.jar" \
+RUN curl -o fabric-installer.jar "https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.3/fabric-installer-1.0.3.jar" \
     && java -jar fabric-installer.jar server -mcversion 1.20.1 -loader 0.19.3 -downloadMinecraft
 
 # Copy the startup script into the container
