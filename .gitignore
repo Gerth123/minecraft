@@ -1,0 +1,12 @@
+# Local Minecraft data (world save, logs, config) if you ever switch to a bind mount
+data/
+mc-data/
+*.log
+
+# Environment files that may contain local overrides
+.env
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
