@@ -1,0 +1,14 @@
+services:
+  mc-server:
+    build: .
+    container_name: mc-server
+    restart: unless-stopped
+    environment:
+      MEMORY: "2G"
+    ports:
+      - "8888:25565"
+    volumes:
+      - mc-data:/server
+ 
+volumes:
+  mc-data:

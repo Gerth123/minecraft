@@ -2,10 +2,10 @@
 data/
 mc-data/
 *.log
-
+ 
 # Environment files that may contain local overrides
 .env
-
+ 
 # Editor and OS files
 .vscode/
 .idea/
