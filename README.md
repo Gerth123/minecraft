@@ -23,7 +23,7 @@ This repository packages a Minecraft server (Fabric loader) as a Docker image, b
 
 ## Usage
 
-The JVM memory allocation is configured through the `MEMORY` environment variable in `docker-compose.yaml`, currently set to `2G`. To change it, edit the value in the `environment` block of the `mc-server` service and run `docker compose up -d --build` again.
+The JVM memory allocation is configured through the `MEMORY` environment variable in `docker-compose.yaml`, with a default of `2G`. To change it, either edit the default value directly in `docker-compose.yaml`, or create a `.env` file in the project folder (git-ignored) with a line like `MEMORY=4G`. Docker Compose automatically picks up values from `.env` and uses them in place of the default, without you needing to touch the tracked `docker-compose.yaml`.
 
 The Minecraft version and Fabric loader version are set directly in the `RUN` command of the `Dockerfile` (currently Minecraft 1.20.1, Fabric loader 0.19.3). To use a different version, edit the version numbers in that line and rebuild.
 
