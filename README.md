@@ -5,6 +5,7 @@
 - [Quickstart](#quickstart)
 - [Project Goal](#project-goal)
 - [Usage](#usage)
+- [Additional Files](#additional-files)
 
 ## Quickstart
 
@@ -27,3 +28,7 @@ The JVM memory allocation is configured through the `MEMORY` environment variabl
 The Minecraft version and Fabric loader version are set directly in the `RUN` command of the `Dockerfile` (currently Minecraft 1.20.1, Fabric loader 0.19.3). To use a different version, edit the version numbers in that line and rebuild.
 
 The server files, world save, and configuration are stored in the named Docker volume `mc-data`, mounted at `/server` inside the container. This means the world and any manual configuration changes survive container restarts and rebuilds.
+
+## Additional Files
+
+- `docs/Minecraft Server Checkliste.pdf`: the official project checklist provided by Developer Akademie, kept here for reference during development. It is not part of the application itself.
