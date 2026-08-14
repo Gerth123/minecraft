@@ -1,0 +1,11 @@
+# Git metadata, not needed inside the image
+.git
+.gitignore
+
+# Local environment overrides, never bake actual values into the image
+.env
+.env.example
+
+# Documentation, not needed at runtime
+README.md
+docs/
