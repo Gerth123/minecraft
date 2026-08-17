@@ -1,0 +1,6 @@
+# Environment files that may contain local overrides
+.env
+
+# Downloaded mod files, these get copied into the running container via
+# "docker cp" and don't belong in the repository itself
+*.jar
