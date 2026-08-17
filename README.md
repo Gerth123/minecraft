@@ -21,7 +21,7 @@ A Dockerized Fabric Minecraft server (1.20.1), built from a small Java base imag
 Clone the repository and move into the project folder:
 
 ```bash
-git clone https://github.com/Gerth123/minecraft.git
+git clone git@github.com:Gerth123/minecraft.git
 cd minecraft
 ```
 
